@@ -6,9 +6,11 @@ int main(){
     int tamanhodointeiro = sizeof(int);
     printf("Tamanho do inteiro: %i \n", tamanhodointeiro);
     y = (int*) malloc(tamanhodointeiro);
-    /*malloc reserva um espaço na memoria e retorna um ponteiro para void (void *)
-    então precisa fazer um cast para ele retornar um valor de outro tipo, "(int *)"
-    "(int *)" faz com que o espaço reservado por malloc seja convertido do tipo void para o tipo int */
+    /* malloc aloca um bloco de memória, e recebe em seu parâmetro o tamanho que
+       deve alocar em bytes. Malloc retorna um ponteiro para o bloco de memória alocado,
+       esse ponteiro é do tipo void*.
+       (int*) significa que o ponteiro retornado por malloc (que é void*) está sendo 
+       convertido para um ponteiro de tipo int* */
 
 
 
